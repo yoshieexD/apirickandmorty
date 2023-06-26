@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #365a08;
+    --secondary-color: #5d9d0b;
+    --highlight-color: #72eb3a;
+    --background-color: #1b1d24;
+}
+
+  * {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../assets/grain.jpg"); 
+    opacity: 0.9; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    background-color: #eff2fd;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    
+}
+
+
+
+.headerbtn{
+    background-color: black;
+    border: 0;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight:bold ;
+
+}
+.headerbtn:hover{
+    cursor: pointer;
+}
+header > div {
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+.Header-desc{
+    display: flex;
+}
+.ricknmorty-desc{
+    font-size: 20px;
+    font-weight: 300;
+}
+.rectangle{
+    width: 5px;
+    height: 70px;
+    background-color: grey;
+    margin-right: 10px;
+}
+.mains {
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+footer {
+    background-color: var(--background-color);
+    height: 150px;
+    padding: 5px;
+}
+
+.footer-text {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text1 {
+    font-weight: 100;
+    color: rgb(147, 147, 147);
+}
+
+.padding-text1 {
+    padding-right: 3px;
+}
+
+.padding-text2 {
+    padding-left: 3px;
+}
+
+
+@media (max-width: 768px) {
+    header > div {
+    font-size: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    header > div {
+    font-size: 40px;
+    }
+
+    footer {
+    height: auto;
+    }
+
+    .footer-text {
+    flex-direction: column;
+    align-items: center;
+    }
+}
+.github-image {
+    width: 40px; 
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
